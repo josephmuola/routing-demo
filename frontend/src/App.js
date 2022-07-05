@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import Navigation from './components/Navigation';
+import card from './components/card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {
   BrowserRouter,
@@ -10,6 +11,7 @@ import {
 import About from './components/About';
 import Services from './components/Services';
 import Home from './components/Home';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -49,6 +51,7 @@ function App() {
   return (
     <div className='container'>
       <BrowserRouter>
+      <card/>
       <Navigation />
         <Routes>
           <Route path='/' element={<Home />}/>
